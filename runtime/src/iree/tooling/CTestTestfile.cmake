@@ -1,0 +1,16 @@
+# CMake generated Testfile for 
+# Source directory: /home/chlee/iree/runtime/src/iree/tooling
+# Build directory: /home/chlee/iree-build-riscv/runtime/src/iree/tooling
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test([=[iree/tooling/buffer_view_matchers_test]=] "/home/chlee/iree/build_tools/cmake/run_riscv_test.sh" "/home/chlee/iree-build-riscv/runtime/src/iree/tooling/buffer_view_matchers_test")
+set_tests_properties([=[iree/tooling/buffer_view_matchers_test]=] PROPERTIES  ENVIRONMENT "TEST_TMPDIR=/home/chlee/iree-build-riscv/test_tmpdir/iree/tooling/buffer_view_matchers_test_test_tmpdir;IREE_BINARY_DIR=/home/chlee/iree-build-riscv;IREE_DYLIB_EXT=.so;IREE_VULKAN_DISABLE=1;IREE_METAL_DISABLE=1" LABELS "iree/tooling" TIMEOUT "60" _BACKTRACE_TRIPLES "/home/chlee/iree/build_tools/cmake/iree_cc_test.cmake;170;add_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;27;iree_cc_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;0;")
+add_test([=[iree/tooling/comparison_test]=] "/home/chlee/iree/build_tools/cmake/run_riscv_test.sh" "/home/chlee/iree-build-riscv/runtime/src/iree/tooling/comparison_test")
+set_tests_properties([=[iree/tooling/comparison_test]=] PROPERTIES  ENVIRONMENT "TEST_TMPDIR=/home/chlee/iree-build-riscv/test_tmpdir/iree/tooling/comparison_test_test_tmpdir;IREE_BINARY_DIR=/home/chlee/iree-build-riscv;IREE_DYLIB_EXT=.so;IREE_VULKAN_DISABLE=1;IREE_METAL_DISABLE=1" LABELS "iree/tooling" TIMEOUT "60" _BACKTRACE_TRIPLES "/home/chlee/iree/build_tools/cmake/iree_cc_test.cmake;170;add_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;60;iree_cc_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;0;")
+add_test([=[iree/tooling/function_io_test]=] "/home/chlee/iree/build_tools/cmake/run_riscv_test.sh" "/home/chlee/iree-build-riscv/runtime/src/iree/tooling/function_io_test")
+set_tests_properties([=[iree/tooling/function_io_test]=] PROPERTIES  ENVIRONMENT "TEST_TMPDIR=/home/chlee/iree-build-riscv/test_tmpdir/iree/tooling/function_io_test_test_tmpdir;IREE_BINARY_DIR=/home/chlee/iree-build-riscv;IREE_DYLIB_EXT=.so;IREE_VULKAN_DISABLE=1;IREE_METAL_DISABLE=1" LABELS "iree/tooling" TIMEOUT "60" _BACKTRACE_TRIPLES "/home/chlee/iree/build_tools/cmake/iree_cc_test.cmake;170;add_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;139;iree_cc_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;0;")
+add_test([=[iree/tooling/numpy_io_test]=] "/home/chlee/iree/build_tools/cmake/run_riscv_test.sh" "/home/chlee/iree-build-riscv/runtime/src/iree/tooling/numpy_io_test")
+set_tests_properties([=[iree/tooling/numpy_io_test]=] PROPERTIES  ENVIRONMENT "TEST_TMPDIR=/home/chlee/iree-build-riscv/test_tmpdir/iree/tooling/numpy_io_test_test_tmpdir;IREE_BINARY_DIR=/home/chlee/iree-build-riscv;IREE_DYLIB_EXT=.so;IREE_VULKAN_DISABLE=1;IREE_METAL_DISABLE=1" LABELS "requires-filesystem;iree/tooling" TIMEOUT "60" _BACKTRACE_TRIPLES "/home/chlee/iree/build_tools/cmake/iree_cc_test.cmake;170;add_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;201;iree_cc_test;/home/chlee/iree/runtime/src/iree/tooling/CMakeLists.txt;0;")
+subdirs("modules")
+subdirs("testdata")

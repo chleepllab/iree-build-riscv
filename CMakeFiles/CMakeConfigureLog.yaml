@@ -1,0 +1,1451 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      The target system is: Linux -  - riscv64
+      The host system is: Linux - 6.8.0-64-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang 
+      Build flags: -march=rv64i2p1ma2p1f2p2d2p2c2p0;-mabi=lp64d
+      Id flags:  
+      
+      The output was:
+      1
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find Scrt1.o: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lgcc_s: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lc: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lgcc_s: No such file or directory
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang 
+      Build flags: -march=rv64i2p1ma2p1f2p2d2p2c2p0;-mabi=lp64d
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /home/chlee/iree-build-riscv/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ 
+      Build flags: -march=rv64i2p1ma2p1f2p2d2p2c2p0;-mabi=lp64d
+      Id flags:  
+      
+      The output was:
+      1
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find Scrt1.o: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lstdc++: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lm: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lgcc_s: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lc: No such file or directory
+      /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find -lgcc_s: No such file or directory
+      clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ 
+      Build flags: -march=rv64i2p1ma2p1f2p2d2p2c2p0;-mabi=lp64d
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/chlee/iree-build-riscv/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)
+      Target: riscv64-unknown-linux-gnu
+      Thread model: posix
+      InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)
+      Target: riscv64-unknown-linux-gnu
+      Thread model: posix
+      InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+      clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)
+      Target: riscv64-unknown-linux-gnu
+      Thread model: posix
+      InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d "
+      CMAKE_C_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_d7da9
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d     -v -MD -MT CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)
+        Target: riscv64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin
+        Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Candidate multilib: lib32/ilp32;@m32@mabi=ilp32
+        Candidate multilib: lib32/ilp32d;@m32@mabi=ilp32d
+        Candidate multilib: lib64/lp64;@m64@mabi=lp64
+        Candidate multilib: lib64/lp64d;@m64@mabi=lp64d
+        Selected multilib: lib64/lp64d;@m64@mabi=lp64d
+         (in-process)
+         "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-18" -cc1 -triple riscv64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic-rv64 -target-feature +m -target-feature +a -target-feature +f -target-feature +d -target-feature +c -target-feature +zicsr -target-feature -e -target-feature -h -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvmac -target-feature -xcvsimd -target-feature -xsfcie -target-feature -xsfvcp -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -zicntr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -zmmul -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smaia -target-feature -experimental-ssaia -target-feature -experimental-zacas -target-feature -experimental-zfbfmin -target-feature -experimental-zicfilp -target-feature -experimental-zicond -target-feature -experimental-ztso -target-feature -experimental-zvbb -target-feature -experimental-zvbc -target-feature -experimental-zvfbfmin -target-feature -experimental-zvfbfwma -target-feature -experimental-zvkb -target-feature -experimental-zvkg -target-feature -experimental-zvkn -target-feature -experimental-zvknc -target-feature -experimental-zvkned -target-feature -experimental-zvkng -target-feature -experimental-zvknha -target-feature -experimental-zvknhb -target-feature -experimental-zvks -target-feature -experimental-zvksc -target-feature -experimental-zvksed -target-feature -experimental-zvksg -target-feature -experimental-zvksh -target-feature -experimental-zvkt -target-feature +relax -target-feature -save-restore -target-abi lp64d -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ -v -fcoverage-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ -resource-dir /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18 -dependency-file CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -sys-header-deps -canonical-system-headers -isysroot /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target riscv64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include
+        End of search list.
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl   -v CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -o cmTC_d7da9   && :
+        clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)
+        Target: riscv64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin
+        Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Candidate multilib: lib32/ilp32;@m32@mabi=ilp32
+        Candidate multilib: lib32/ilp32d;@m32@mabi=ilp32d
+        Candidate multilib: lib64/lp64;@m64@mabi=lp64
+        Candidate multilib: lib64/lp64d;@m64@mabi=lp64d
+        Selected multilib: lib64/lp64d;@m64@mabi=lp64d
+         "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld" --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -pie --hash-style=gnu --eh-frame-hdr -m elf64lriscv -X -dynamic-linker /lib/ld-linux-riscv64-lp64d.so.1 -o cmTC_d7da9 /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o -L/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64 -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include]
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include]
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include]
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include]
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+        implicit include dirs: [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include;/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_d7da9]
+        ignore line: [[1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d     -v -MD -MT CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)]
+        ignore line: [Target: riscv64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin]
+        ignore line: [Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Candidate multilib: lib32/ilp32]
+        ignore line: [@m32@mabi=ilp32]
+        ignore line: [Candidate multilib: lib32/ilp32d]
+        ignore line: [@m32@mabi=ilp32d]
+        ignore line: [Candidate multilib: lib64/lp64]
+        ignore line: [@m64@mabi=lp64]
+        ignore line: [Candidate multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        ignore line: [Selected multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-18" -cc1 -triple riscv64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic-rv64 -target-feature +m -target-feature +a -target-feature +f -target-feature +d -target-feature +c -target-feature +zicsr -target-feature -e -target-feature -h -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvmac -target-feature -xcvsimd -target-feature -xsfcie -target-feature -xsfvcp -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -zicntr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -zmmul -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smaia -target-feature -experimental-ssaia -target-feature -experimental-zacas -target-feature -experimental-zfbfmin -target-feature -experimental-zicfilp -target-feature -experimental-zicond -target-feature -experimental-ztso -target-feature -experimental-zvbb -target-feature -experimental-zvbc -target-feature -experimental-zvfbfmin -target-feature -experimental-zvfbfwma -target-feature -experimental-zvkb -target-feature -experimental-zvkg -target-feature -experimental-zvkn -target-feature -experimental-zvknc -target-feature -experimental-zvkned -target-feature -experimental-zvkng -target-feature -experimental-zvknha -target-feature -experimental-zvknhb -target-feature -experimental-zvks -target-feature -experimental-zvksc -target-feature -experimental-zvksed -target-feature -experimental-zvksg -target-feature -experimental-zvksh -target-feature -experimental-zvkt -target-feature +relax -target-feature -save-restore -target-abi lp64d -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ -v -fcoverage-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-wBb5EZ -resource-dir /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18 -dependency-file CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -sys-header-deps -canonical-system-headers -isysroot /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target riscv64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl   -v CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -o cmTC_d7da9   && :]
+        ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)]
+        ignore line: [Target: riscv64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin]
+        ignore line: [Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Candidate multilib: lib32/ilp32]
+        ignore line: [@m32@mabi=ilp32]
+        ignore line: [Candidate multilib: lib32/ilp32d]
+        ignore line: [@m32@mabi=ilp32d]
+        ignore line: [Candidate multilib: lib64/lp64]
+        ignore line: [@m64@mabi=lp64]
+        ignore line: [Candidate multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        ignore line: [Selected multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        link line: [ "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld" --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -pie --hash-style=gnu --eh-frame-hdr -m elf64lriscv -X -dynamic-linker /lib/ld-linux-riscv64-lp64d.so.1 -o cmTC_d7da9 /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o -L/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64 -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld] ==> ignore
+          arg [--sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf64lriscv] ==> ignore
+          arg [-X] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-riscv64-lp64d.so.1] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d7da9] ==> ignore
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lm] ==> lib [m]
+          arg [-ldl] ==> lib [dl]
+          arg [CMakeFiles/cmTC_d7da9.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib]
+        implicit libs: [stdc++;pthread;m;dl;gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+        implicit dirs: [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d  "
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_32a95
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d      -v -MD -MT CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)
+        Target: riscv64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin
+        Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Candidate multilib: lib32/ilp32;@m32@mabi=ilp32
+        Candidate multilib: lib32/ilp32d;@m32@mabi=ilp32d
+        Candidate multilib: lib64/lp64;@m64@mabi=lp64
+        Candidate multilib: lib64/lp64d;@m64@mabi=lp64d
+        Selected multilib: lib64/lp64d;@m64@mabi=lp64d
+         (in-process)
+         "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-18" -cc1 -triple riscv64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic-rv64 -target-feature +m -target-feature +a -target-feature +f -target-feature +d -target-feature +c -target-feature +zicsr -target-feature -e -target-feature -h -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvmac -target-feature -xcvsimd -target-feature -xsfcie -target-feature -xsfvcp -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -zicntr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -zmmul -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smaia -target-feature -experimental-ssaia -target-feature -experimental-zacas -target-feature -experimental-zfbfmin -target-feature -experimental-zicfilp -target-feature -experimental-zicond -target-feature -experimental-ztso -target-feature -experimental-zvbb -target-feature -experimental-zvbc -target-feature -experimental-zvfbfmin -target-feature -experimental-zvfbfwma -target-feature -experimental-zvkb -target-feature -experimental-zvkg -target-feature -experimental-zvkn -target-feature -experimental-zvknc -target-feature -experimental-zvkned -target-feature -experimental-zvkng -target-feature -experimental-zvknha -target-feature -experimental-zvknhb -target-feature -experimental-zvks -target-feature -experimental-zvksc -target-feature -experimental-zvksed -target-feature -experimental-zvksg -target-feature -experimental-zvksh -target-feature -experimental-zvkt -target-feature +relax -target-feature -save-restore -target-abi lp64d -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ -v -fcoverage-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ -resource-dir /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18 -dependency-file CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -canonical-system-headers -isysroot /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0 -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/backward -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target riscv64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/backward
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include
+         /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include
+        End of search list.
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl   -v CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_32a95   && :
+        clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)
+        Target: riscv64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin
+        Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0
+        Candidate multilib: lib32/ilp32;@m32@mabi=ilp32
+        Candidate multilib: lib32/ilp32d;@m32@mabi=ilp32d
+        Candidate multilib: lib64/lp64;@m64@mabi=lp64
+        Candidate multilib: lib64/lp64d;@m64@mabi=lp64d
+        Selected multilib: lib64/lp64d;@m64@mabi=lp64d
+         "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld" --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -pie --hash-style=gnu --eh-frame-hdr -m elf64lriscv -X -dynamic-linker /lib/ld-linux-riscv64-lp64d.so.1 -o cmTC_32a95 /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o -L/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64 -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0]
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d]
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/backward]
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include]
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include]
+          add: [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include/c++/12.2.0]
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d]
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/backward] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include/c++/12.2.0/backward]
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include]
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include]
+        collapse include dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+        implicit include dirs: [/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include/c++/12.2.0;/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d;/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include/c++/12.2.0/backward;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include;/home/chlee/riscv/toolchain/clang/linux/RISCV/riscv64-unknown-linux-gnu/include;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_32a95]
+        ignore line: [[1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d      -v -MD -MT CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)]
+        ignore line: [Target: riscv64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin]
+        ignore line: [Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Candidate multilib: lib32/ilp32]
+        ignore line: [@m32@mabi=ilp32]
+        ignore line: [Candidate multilib: lib32/ilp32d]
+        ignore line: [@m32@mabi=ilp32d]
+        ignore line: [Candidate multilib: lib64/lp64]
+        ignore line: [@m64@mabi=lp64]
+        ignore line: [Candidate multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        ignore line: [Selected multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-18" -cc1 -triple riscv64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic-rv64 -target-feature +m -target-feature +a -target-feature +f -target-feature +d -target-feature +c -target-feature +zicsr -target-feature -e -target-feature -h -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvmac -target-feature -xcvsimd -target-feature -xsfcie -target-feature -xsfvcp -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -zicntr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -zmmul -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smaia -target-feature -experimental-ssaia -target-feature -experimental-zacas -target-feature -experimental-zfbfmin -target-feature -experimental-zicfilp -target-feature -experimental-zicond -target-feature -experimental-ztso -target-feature -experimental-zvbb -target-feature -experimental-zvbc -target-feature -experimental-zvfbfmin -target-feature -experimental-zvfbfwma -target-feature -experimental-zvkb -target-feature -experimental-zvkg -target-feature -experimental-zvkn -target-feature -experimental-zvknc -target-feature -experimental-zvkned -target-feature -experimental-zvkng -target-feature -experimental-zvknha -target-feature -experimental-zvknhb -target-feature -experimental-zvks -target-feature -experimental-zvksc -target-feature -experimental-zvksed -target-feature -experimental-zvksg -target-feature -experimental-zvksh -target-feature -experimental-zvkt -target-feature +relax -target-feature -save-restore -target-abi lp64d -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ -v -fcoverage-compilation-dir=/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-aZOouQ -resource-dir /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18 -dependency-file CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -canonical-system-headers -isysroot /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0 -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/backward -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include -internal-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include -internal-externc-isystem /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target riscv64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/riscv64-unknown-linux-gnu/lib64/lp64d]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/12.2.0/backward]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/include]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/../../../../riscv64-unknown-linux-gnu/include]
+        ignore line: [ /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl   -v CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_32a95   && :]
+        ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project ac0dda894231e6281e7739aa0ea01a4e9697c747)]
+        ignore line: [Target: riscv64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin]
+        ignore line: [Found candidate GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Selected GCC installation: /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0]
+        ignore line: [Candidate multilib: lib32/ilp32]
+        ignore line: [@m32@mabi=ilp32]
+        ignore line: [Candidate multilib: lib32/ilp32d]
+        ignore line: [@m32@mabi=ilp32d]
+        ignore line: [Candidate multilib: lib64/lp64]
+        ignore line: [@m64@mabi=lp64]
+        ignore line: [Candidate multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        ignore line: [Selected multilib: lib64/lp64d]
+        ignore line: [@m64@mabi=lp64d]
+        link line: [ "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld" --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -pie --hash-style=gnu --eh-frame-hdr -m elf64lriscv -X -dynamic-linker /lib/ld-linux-riscv64-lp64d.so.1 -o cmTC_32a95 /home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o -L/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64 -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d -L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld] ==> ignore
+          arg [--sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf64lriscv] ==> ignore
+          arg [-X] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-riscv64-lp64d.so.1] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_32a95] ==> ignore
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d]
+          arg [-L/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib] ==> dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lm] ==> lib [m]
+          arg [-ldl] ==> lib [dl]
+          arg [CMakeFiles/cmTC_32a95.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o]
+          arg [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o] ==> obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o]
+        collapse obj [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/../lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib/../lib64] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d]
+        collapse library dir [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib] ==> [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib]
+        implicit libs: [stdc++;pthread;m;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d/Scrt1.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crti.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtbeginS.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtendS.o;/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d/crtn.o]
+        implicit dirs: [/home/chlee/riscv/toolchain/clang/linux/RISCV/lib/gcc/riscv64-unknown-linux-gnu/12.2.0/lib64/lp64d;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib64/lp64d;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/usr/lib64/lp64d;/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindCUDAToolkit.cmake:640 (message)"
+      - "/usr/share/cmake-3.28/Modules/FindCUDAToolkit.cmake:766 (_CUDAToolkit_find_root_dir)"
+      - "CMakeLists.txt:240 (find_package)"
+    message: |
+      Executed nvcc to extract CUDAToolkit information:
+      #$ _NVVM_BRANCH_=nvvm
+      #$ _SPACE_= 
+      #$ _CUDART_=cudart
+      #$ _HERE_=/usr/lib/nvidia-cuda-toolkit/bin
+      #$ _THERE_=/usr/lib/nvidia-cuda-toolkit/bin
+      #$ _TARGET_SIZE_=
+      #$ _TARGET_DIR_=
+      #$ _TARGET_SIZE_=64
+      #$ NVVMIR_LIBRARY_DIR=/usr/lib/nvidia-cuda-toolkit/libdevice
+      #$ PATH=/usr/lib/nvidia-cuda-toolkit/bin:/home/chlee/ccache/install/bin:/home/chlee/iree-build/tools:/home/chlee/ccache/install/bin:/home/chlee/iree-build/tools:/home/chlee/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+      #$ LIBRARIES=  -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu
+      nvcc fatal   : Don't know what to do with '__cmake_determine_cuda'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindCUDAToolkit.cmake:671 (message)"
+      - "/usr/share/cmake-3.28/Modules/FindCUDAToolkit.cmake:766 (_CUDAToolkit_find_root_dir)"
+      - "CMakeLists.txt:240 (find_package)"
+    message: |
+      Parsed CUDAToolkit nvcc implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld   -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu]
+          arg [cuda-fake-ld] ==> ignore
+          arg [-L/usr/lib/x86_64-linux-gnu/stubs] ==> dir [/usr/lib/x86_64-linux-gnu/stubs]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/x86_64-linux-gnu/stubs] ==> [/usr/lib/x86_64-linux-gnu/stubs]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/usr/lib/x86_64-linux-gnu/stubs;/usr/lib/x86_64-linux-gnu]
+        implicit fwks: []
+      
+      /usr/lib/x86_64-linux-gnu/stubs;/usr/lib/x86_64-linux-gnu
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.28/Modules/FindCUDAToolkit.cmake:1152 (find_package)"
+      - "CMakeLists.txt:240 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-cAGfa0"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-cAGfa0"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d "
+      CMAKE_C_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-cAGfa0'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c4657
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DCMAKE_HAVE_LIBC_PTHREAD  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d   -std=gnu11 -MD -MT CMakeFiles/cmTC_c4657.dir/src.c.o -MF CMakeFiles/cmTC_c4657.dir/src.c.o.d -o CMakeFiles/cmTC_c4657.dir/src.c.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-cAGfa0/src.c
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_c4657.dir/src.c.o -o cmTC_c4657   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build_tools/cmake/iree_setup_toolchain.cmake:73 (check_symbol_exists)"
+      - "build_tools/cmake/iree_setup_toolchain.cmake:258 (iree_setup_toolchain)"
+      - "CMakeLists.txt:671 (include)"
+    checks:
+      - "Looking for dlopen"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eNhQD5"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eNhQD5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d "
+      CMAKE_C_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "IREE_HAVE_DLOPEN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eNhQD5'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0ce0f
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d   -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_0ce0f.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_0ce0f.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_0ce0f.dir/CheckSymbolExists.c.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eNhQD5/CheckSymbolExists.c
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_0ce0f.dir/CheckSymbolExists.c.o -o cmTC_0ce0f  -ldl && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_tools/cmake/iree_setup_toolchain.cmake:85 (check_cxx_compiler_flag)"
+      - "build_tools/cmake/iree_setup_toolchain.cmake:258 (iree_setup_toolchain)"
+      - "CMakeLists.txt:671 (include)"
+    checks:
+      - "Performing Test IREE_SUPPORTS_VISIBILITY_DEFAULT"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-zRQUlm"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-zRQUlm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d  "
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "IREE_SUPPORTS_VISIBILITY_DEFAULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-zRQUlm'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_35f4e
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DIREE_SUPPORTS_VISIBILITY_DEFAULT  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -fPIE   -fvisibility=default -MD -MT CMakeFiles/cmTC_35f4e.dir/src.cxx.o -MF CMakeFiles/cmTC_35f4e.dir/src.cxx.o.d -o CMakeFiles/cmTC_35f4e.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-zRQUlm/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_35f4e.dir/src.cxx.o -o cmTC_35f4e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "third_party/benchmark/CMakeLists.txt:125 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NJMAL1"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NJMAL1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d "
+      CMAKE_C_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NJMAL1'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f140a
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d  -DCHECK_FUNCTION_EXISTS=shm_open -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_f140a.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_f140a.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_f140a.dir/CheckFunctionExists.c.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NJMAL1/CheckFunctionExists.c
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d  -DCHECK_FUNCTION_EXISTS=shm_open -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_f140a.dir/CheckFunctionExists.c.o -o cmTC_f140a  -lrt && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:174 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-fQ3Xb6"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-fQ3Xb6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d  "
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-fQ3Xb6'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_cbed6
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WALL  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall -std=c++11 -fPIE   -Wall -MD -MT CMakeFiles/cmTC_cbed6.dir/src.cxx.o -MF CMakeFiles/cmTC_cbed6.dir/src.cxx.o.d -o CMakeFiles/cmTC_cbed6.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-fQ3Xb6/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_cbed6.dir/src.cxx.o -o cmTC_cbed6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:175 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-hZDqO8"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-hZDqO8"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-hZDqO8'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_27b29
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WEXTRA  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra -std=c++11 -fPIE   -Wextra -MD -MT CMakeFiles/cmTC_27b29.dir/src.cxx.o -MF CMakeFiles/cmTC_27b29.dir/src.cxx.o.d -o CMakeFiles/cmTC_27b29.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-hZDqO8/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_27b29.dir/src.cxx.o -o cmTC_27b29   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:176 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-uyqMTe"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-uyqMTe"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-uyqMTe'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7b98a
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WSHADOW  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow -std=c++11 -fPIE   -Wshadow -MD -MT CMakeFiles/cmTC_7b98a.dir/src.cxx.o -MF CMakeFiles/cmTC_7b98a.dir/src.cxx.o.d -o CMakeFiles/cmTC_7b98a.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-uyqMTe/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_7b98a.dir/src.cxx.o -o cmTC_7b98a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:177 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NlW7pG"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NlW7pG"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NlW7pG'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b29d7
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++11 -fPIE   -Wfloat-equal -MD -MT CMakeFiles/cmTC_b29d7.dir/src.cxx.o -MF CMakeFiles/cmTC_b29d7.dir/src.cxx.o.d -o CMakeFiles/cmTC_b29d7.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-NlW7pG/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_b29d7.dir/src.cxx.o -o cmTC_b29d7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:178 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-YSCYXr"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-YSCYXr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-YSCYXr'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a9f84
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++11 -fPIE   -Wold-style-cast -MD -MT CMakeFiles/cmTC_a9f84.dir/src.cxx.o -MF CMakeFiles/cmTC_a9f84.dir/src.cxx.o.d -o CMakeFiles/cmTC_a9f84.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-YSCYXr/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_a9f84.dir/src.cxx.o -o cmTC_a9f84   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:180 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-LePkqZ"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-LePkqZ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-LePkqZ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_dc54c
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WERROR  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror -std=c++11 -fPIE   -Werror -MD -MT CMakeFiles/cmTC_dc54c.dir/src.cxx.o -MF CMakeFiles/cmTC_dc54c.dir/src.cxx.o.d -o CMakeFiles/cmTC_dc54c.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-LePkqZ/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_dc54c.dir/src.cxx.o -o cmTC_dc54c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:184 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-kpNGFl"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-kpNGFl"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-kpNGFl'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c48a7
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WSUGGEST_OVERRIDE  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override -std=c++11 -fPIE   -Wsuggest-override -MD -MT CMakeFiles/cmTC_c48a7.dir/src.cxx.o -MF CMakeFiles/cmTC_c48a7.dir/src.cxx.o.d -o CMakeFiles/cmTC_c48a7.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-kpNGFl/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_c48a7.dir/src.cxx.o -o cmTC_c48a7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:186 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-BmIQL4"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-BmIQL4"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-BmIQL4'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_66b09
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_PEDANTIC  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic -std=c++11 -fPIE   -pedantic -MD -MT CMakeFiles/cmTC_66b09.dir/src.cxx.o -MF CMakeFiles/cmTC_66b09.dir/src.cxx.o.d -o CMakeFiles/cmTC_66b09.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-BmIQL4/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_66b09.dir/src.cxx.o -o cmTC_66b09   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:187 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-6sjVmm"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-6sjVmm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-6sjVmm'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_99c87
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -std=c++11 -fPIE   -pedantic-errors -MD -MT CMakeFiles/cmTC_99c87.dir/src.cxx.o -MF CMakeFiles/cmTC_99c87.dir/src.cxx.o.d -o CMakeFiles/cmTC_99c87.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-6sjVmm/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_99c87.dir/src.cxx.o -o cmTC_99c87   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:188 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-VsBq9g"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-VsBq9g"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-VsBq9g'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7e7a9
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++11 -fPIE   -Wshorten-64-to-32 -MD -MT CMakeFiles/cmTC_7e7a9.dir/src.cxx.o -MF CMakeFiles/cmTC_7e7a9.dir/src.cxx.o.d -o CMakeFiles/cmTC_7e7a9.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-VsBq9g/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_7e7a9.dir/src.cxx.o -o cmTC_7e7a9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:189 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-7us8sN"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-7us8sN"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-7us8sN'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_be3b6
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -std=c++11 -fPIE   -fstrict-aliasing -MD -MT CMakeFiles/cmTC_be3b6.dir/src.cxx.o -MF CMakeFiles/cmTC_be3b6.dir/src.cxx.o.d -o CMakeFiles/cmTC_be3b6.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-7us8sN/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_be3b6.dir/src.cxx.o -o cmTC_be3b6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:192 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eRwrBT"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eRwrBT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eRwrBT'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_9f2df
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++11 -fPIE   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_9f2df.dir/src.cxx.o -MF CMakeFiles/cmTC_9f2df.dir/src.cxx.o.d -o CMakeFiles/cmTC_9f2df.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-eRwrBT/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_9f2df.dir/src.cxx.o -o cmTC_9f2df   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:202 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-QscOq2"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-QscOq2"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-QscOq2'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_403f7
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WNO_DEPRECATED  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++11 -fPIE   -Wno-deprecated -MD -MT CMakeFiles/cmTC_403f7.dir/src.cxx.o -MF CMakeFiles/cmTC_403f7.dir/src.cxx.o.d -o CMakeFiles/cmTC_403f7.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-QscOq2/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_403f7.dir/src.cxx.o -o cmTC_403f7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:210 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-UMbZOG"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-UMbZOG"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-UMbZOG'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e0b02
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++11 -fPIE   -Wstrict-aliasing -MD -MT CMakeFiles/cmTC_e0b02.dir/src.cxx.o -MF CMakeFiles/cmTC_e0b02.dir/src.cxx.o.d -o CMakeFiles/cmTC_e0b02.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-UMbZOG/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_e0b02.dir/src.cxx.o -o cmTC_e0b02   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:215 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WD654"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-J3ElBR"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-J3ElBR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WD654"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-J3ElBR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3fda3
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WD654  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++11 -fPIE   -wd654 -MD -MT CMakeFiles/cmTC_3fda3.dir/src.cxx.o -MF CMakeFiles/cmTC_3fda3.dir/src.cxx.o.d -o CMakeFiles/cmTC_3fda3.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-J3ElBR/src.cxx
+        FAILED: CMakeFiles/cmTC_3fda3.dir/src.cxx.o 
+        /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WD654  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++11 -fPIE   -wd654 -MD -MT CMakeFiles/cmTC_3fda3.dir/src.cxx.o -MF CMakeFiles/cmTC_3fda3.dir/src.cxx.o.d -o CMakeFiles/cmTC_3fda3.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-J3ElBR/src.cxx
+        clang++: error: unknown argument: '-wd654'
+        clang++: error: unknown argument: '-wd654'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:216 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-vrfqfL"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-vrfqfL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-vrfqfL'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a7d7b
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++11 -fPIE   -Wthread-safety -MD -MT CMakeFiles/cmTC_a7d7b.dir/src.cxx.o -MF CMakeFiles/cmTC_a7d7b.dir/src.cxx.o.d -o CMakeFiles/cmTC_a7d7b.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-vrfqfL/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_a7d7b.dir/src.cxx.o -o cmTC_a7d7b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "third_party/benchmark/cmake/CXXFeatureCheck.cmake:41 (try_compile)"
+      - "third_party/benchmark/CMakeLists.txt:218 (cxx_feature_check)"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "COMPILE_HAVE_THREAD_SAFETY_ATTRIBUTES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_86ddc
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot  -I/home/chlee/iree/third_party/benchmark/include -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -fPIE -MD -MT CMakeFiles/cmTC_86ddc.dir/thread_safety_attributes.cpp.o -MF CMakeFiles/cmTC_86ddc.dir/thread_safety_attributes.cpp.o.d -o CMakeFiles/cmTC_86ddc.dir/thread_safety_attributes.cpp.o -c /home/chlee/iree/third_party/benchmark/cmake/thread_safety_attributes.cpp
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_86ddc.dir/thread_safety_attributes.cpp.o -o cmTC_86ddc   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "third_party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "third_party/benchmark/CMakeLists.txt:267 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-t1eEPb"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-t1eEPb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-t1eEPb'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_468b7
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DHAVE_CXX_FLAG_COVERAGE  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -std=c++11 -fPIE   --coverage -MD -MT CMakeFiles/cmTC_468b7.dir/src.cxx.o -MF CMakeFiles/cmTC_468b7.dir/src.cxx.o.d -o CMakeFiles/cmTC_468b7.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-t1eEPb/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_468b7.dir/src.cxx.o -o cmTC_468b7   && :
+        FAILED: cmTC_468b7 
+        : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_468b7.dir/src.cxx.o -o cmTC_468b7   && :
+        /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/riscv64-unknown-linux-gnu-ld: cannot find /home/chlee/riscv/toolchain/clang/linux/RISCV/lib/clang/18/lib/linux/libclang_rt.profile-riscv64.a: No such file or directory
+        clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "third_party/benchmark/cmake/CXXFeatureCheck.cmake:41 (try_compile)"
+      - "third_party/benchmark/CMakeLists.txt:297 (cxx_feature_check)"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_9eafc
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -fPIE -MD -MT CMakeFiles/cmTC_9eafc.dir/std_regex.cpp.o -MF CMakeFiles/cmTC_9eafc.dir/std_regex.cpp.o.d -o CMakeFiles/cmTC_9eafc.dir/std_regex.cpp.o -c /home/chlee/iree/third_party/benchmark/cmake/std_regex.cpp
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_9eafc.dir/std_regex.cpp.o -o cmTC_9eafc   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "third_party/benchmark/cmake/CXXFeatureCheck.cmake:41 (try_compile)"
+      - "third_party/benchmark/CMakeLists.txt:298 (cxx_feature_check)"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ebe13
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -fPIE -MD -MT CMakeFiles/cmTC_ebe13.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_ebe13.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_ebe13.dir/gnu_posix_regex.cpp.o -c /home/chlee/iree/third_party/benchmark/cmake/gnu_posix_regex.cpp
+        FAILED: CMakeFiles/cmTC_ebe13.dir/gnu_posix_regex.cpp.o 
+        /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -fPIE -MD -MT CMakeFiles/cmTC_ebe13.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_ebe13.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_ebe13.dir/gnu_posix_regex.cpp.o -c /home/chlee/iree/third_party/benchmark/cmake/gnu_posix_regex.cpp
+        /home/chlee/iree/third_party/benchmark/cmake/gnu_posix_regex.cpp:1:10: fatal error: 'gnuregex.h' file not found
+            1 | #include <gnuregex.h>
+              |          ^~~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "third_party/benchmark/cmake/CXXFeatureCheck.cmake:41 (try_compile)"
+      - "third_party/benchmark/CMakeLists.txt:299 (cxx_feature_check)"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4dfda
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -fPIE -MD -MT CMakeFiles/cmTC_4dfda.dir/posix_regex.cpp.o -MF CMakeFiles/cmTC_4dfda.dir/posix_regex.cpp.o.d -o CMakeFiles/cmTC_4dfda.dir/posix_regex.cpp.o -c /home/chlee/iree/third_party/benchmark/cmake/posix_regex.cpp
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_4dfda.dir/posix_regex.cpp.o -o cmTC_4dfda   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "third_party/benchmark/cmake/CXXFeatureCheck.cmake:41 (try_compile)"
+      - "third_party/benchmark/CMakeLists.txt:308 (cxx_feature_check)"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f89f2
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -fPIE -MD -MT CMakeFiles/cmTC_f89f2.dir/steady_clock.cpp.o -MF CMakeFiles/cmTC_f89f2.dir/steady_clock.cpp.o.d -o CMakeFiles/cmTC_f89f2.dir/steady_clock.cpp.o -c /home/chlee/iree/third_party/benchmark/cmake/steady_clock.cpp
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_f89f2.dir/steady_clock.cpp.o -o cmTC_f89f2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "third_party/benchmark/cmake/CXXFeatureCheck.cmake:41 (try_compile)"
+      - "third_party/benchmark/CMakeLists.txt:312 (cxx_feature_check)"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/;/home/chlee/iree/third_party/benchmark/cmake/Modules;/home/chlee/iree/third_party/benchmark/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f3bc5
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot   -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -fPIE -MD -MT CMakeFiles/cmTC_f3bc5.dir/pthread_affinity.cpp.o -MF CMakeFiles/cmTC_f3bc5.dir/pthread_affinity.cpp.o.d -o CMakeFiles/cmTC_f3bc5.dir/pthread_affinity.cpp.o -c /home/chlee/iree/third_party/benchmark/cmake/pthread_affinity.cpp
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_f3bc5.dir/pthread_affinity.cpp.o -o cmTC_f3bc5   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "runtime/src/iree/builtins/ukernel/arch/riscv_64/CMakeLists.txt:68 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test IREE_UK_BUILD_RISCV_64_V"
+    directories:
+      source: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-5q5UGR"
+      binary: "/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-5q5UGR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "       -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d  "
+      CMAKE_CXX_FLAGS_DEBUG: " "
+      CMAKE_EXE_LINKER_FLAGS: " -lstdc++ -lpthread -lm -ldl  "
+      CMAKE_MODULE_PATH: "/home/chlee/iree/build_tools/cmake/"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_SYSROOT: "/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot"
+    buildResult:
+      variable: "IREE_UK_BUILD_RISCV_64_V"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-5q5UGR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f2e5a
+        [1/2] /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -DIREE_UK_BUILD_RISCV_64_V  -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d    -fPIE   -march=rv64gv -MD -MT CMakeFiles/cmTC_f2e5a.dir/src.cxx.o -MF CMakeFiles/cmTC_f2e5a.dir/src.cxx.o.d -o CMakeFiles/cmTC_f2e5a.dir/src.cxx.o -c /home/chlee/iree-build-riscv/CMakeFiles/CMakeScratch/TryCompile-5q5UGR/src.cxx
+        [2/2] : && /home/chlee/riscv/toolchain/clang/linux/RISCV/bin/clang++ --sysroot=/home/chlee/riscv/toolchain/clang/linux/RISCV/sysroot -march=rv64i2p1ma2p1f2p2d2p2c2p0 -mabi=lp64d -lstdc++ -lpthread -lm -ldl CMakeFiles/cmTC_f2e5a.dir/src.cxx.o -o cmTC_f2e5a   && :
+        
+      exitCode: 0
+...
